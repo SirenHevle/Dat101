@@ -231,5 +231,5 @@ let totaldayys = 131;
 let weekss = Math.floor(totaldayys / 7);
 let dayys = totaldayys % 7; 
  printOut(" there are " + weekss + " weeks, and " + dayys + " days in" + totaldayys + " days ");
-printOut("Replace this with you answer!");
+printOut("Replace this with you answer!");        // % is used to return the reminding divided number.
 printOut(newLine);
