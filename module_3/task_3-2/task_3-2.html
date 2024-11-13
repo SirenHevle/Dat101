@@ -10,8 +10,20 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>[In part 1, is it possible to solve the problem using a single "for" loop?]</li>
+      <p>[Yes, if you do both counts in the "for" loop, you could solve the part with only one loop]</p>
+      <li>[in part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?
+        Describe what would or would not be necessary to achieve this. Provide a thorough explanation of
+        your answer]</li>
+      <p>[Technikaly speaking no. If the code is set to a random number the computer will eventually guess the right number, just within a secound. But if the while loop never becomes False. The infitity loop will accour. However this will only accour if we mistakenly write the wrong condition, or forgett to update the guessed number inside the loop. Leaving the computer to infinity loop. To avoid this. Keep the guessnumber to a number, not "null", or if condition is set to "true", use break to cut the loop.]</p>
+      <li>[Discuss briefly how quickly or slowly a computer might be able to compute this, considering the
+        number of guesses and the time it takes. How does the program behave while it is guessing? Can
+        the program perform other tasks concurrently?]</li>
+      <p>[Today most computers will guess this in a variarty of secounds and tries. Because there is no set number between 1 and 60, the computer will run the loop until it matches the guessnumber. THis could take everything from 1 - 59 tries because it randomises everythime. Running a while loop in a CPU it will hold only this attention and not crash the computer. This is a single threathed program that means the while loop needs to be adressed before other tasks could be preformed, if SetTimout is not preformed.To preform other task use SetInterval to a non-blocking approach. ]</p>
+      <li>[Explain the relationship between rows and columns in nested "for" loops. Can we, for instance,
+        change the order, considering rows to be innermost or columns to be innermost, or does this not
+        matter?]</li>
+      <p>[In nested for loops, the order is set by which loop is inner and outer loop. The outer loop generates over rows, and the inner loop usually interate over coloumns inside the row. However by changing the order of what is the inner and outer loop could change the order of rows and coloumns. ]</p>
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>

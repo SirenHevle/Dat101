@@ -11,7 +11,7 @@ if(wakeUpTime == 7) {
 
   printOut("Du kan ta Bussen til skolen") 
 } 
-else if(wakeUpTime == 8){
+else if(wakeUpTime === 8){
   printOut("Wake Up Time = 8")
   printOut("Du kan ta toget til skolen")
 } 
