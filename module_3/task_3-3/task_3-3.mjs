@@ -38,6 +38,13 @@ something both informative and engaging.
 ● Creativity is encouraged! Let your passion for gaming and multimedia shine through in your output.*/
 /*
 
+function PrintTodaysDateNorwegian() {
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const norwegianDate = today.toLocaleDateString('no-NB', options);
+  printOut(norwegianDate + "");
+}   
+
 PrintTodaysDateNorwegian(return today) 
 
 // finn ut dager til slipp av 2XKO
@@ -61,6 +68,21 @@ if (daysLeft > 0 ) {
             printOut("2XKO er allerede lansert. Gikk du glipp av den store dagen? fortvil ikke 🎉 Du finner oss på alle playstation konsoller! seer deg der💥 ");
         }
 }
+}
+function displayDateAndCountdown() {
+    // Set the release date of 2XKO
+    const releaseDate = new Date("2025-05-14");
+
+    // Display today's date and calculate the countdown
+    const today = PrintTodaysDateNorwegian();
+    const daysLeft = calculateDaysUntilRelease(releaseDate);
+
+    // flair to the final output
+    printout("✨------------------------✨");
+    printout("🕒 Dagens informasjon:");
+    printout(`📅 Dagens dato: ${today.toLocaleDateString("no-NO")}`);
+    printout("🎮 Hypen er ekte!");
+    printout("✨------------------------✨");
 }
 
 
