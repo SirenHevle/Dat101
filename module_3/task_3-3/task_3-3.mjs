@@ -36,7 +36,7 @@ Remember:
 something both informative and engaging.
 ● Accuracy is key! Make sure your countdown is precise and your date formatting is impeccable.
 ● Creativity is encouraged! Let your passion for gaming and multimedia shine through in your output.*/
-/*
+
 
 function PrintTodaysDateNorwegian() {
     const today = new Date();
@@ -45,12 +45,13 @@ function PrintTodaysDateNorwegian() {
   printOut(norwegianDate + "");
 }   
 
-PrintTodaysDateNorwegian(return today) 
+PrintTodaysDateNorwegian(today) 
+return;
 
 // finn ut dager til slipp av 2XKO
 function daysToRelease() {
     const today = PrintTodaysDateNorwegian();
-    const releaseDate = new Date('2025-05-14'); // dato for utgivelse
+    const releaseDate = new Date("2025-05-14"); // dato for utgivelse
     const minutesInOneday = 24 * 60 * 60 * 1000;
 
 
@@ -61,11 +62,11 @@ const daysLeft = Math.ceil(differanceInMs / minutesInOneday);
 //kalkulering av dager som vises på nedtelling
 
 if (daysLeft > 0 ) {
-    printOut(`⏳ Bare ${daysLeft} til vi lanserer 2XKO! Samle vennene og finn frem BeforeUnloadEvent. Dette tar av 💥`);
+    printOut("⏳ Bare ${daysLeft} til vi lanserer 2XKO! Samle vennene og finn frem BeforeUnloadEvent. Dette tar av 💥");
         else if (daysLeft === 0){
-            printOut("🎉🎉 Idag er dagen vi alle har ventet på! 2XKO er her! Samle kompisene og forbred dere på kamp!" )
+            printOut("🎉🎉 Idag er dagen vi alle har ventet på! 2XKO er her! Samle kompisene og forbered dere på kamp!" )
         } else {
-            printOut("2XKO er allerede lansert. Gikk du glipp av den store dagen? fortvil ikke 🎉 Du finner oss på alle playstation konsoller! seer deg der💥 ");
+            printOut("2XKO er allerede lansert. Gikk du glipp av den store dagen? fortvil ikke 🎉 Du finner oss på alle playstation konsoller! ser deg der💥 ");
         }
 }
 }
@@ -80,13 +81,12 @@ function displayDateAndCountdown() {
     // flair to the final output
     printout("✨------------------------✨");
     printout("🕒 Dagens informasjon:");
-    printout(`📅 Dagens dato: ${today.toLocaleDateString("no-NO")}`);
+    printout("📅 Dagens dato:" ${today.toLocaleDateString("no-NO"});
     printout("🎮 Hypen er ekte!");
     printout("✨------------------------✨");
 }
 
 
-*/
 
 
 
